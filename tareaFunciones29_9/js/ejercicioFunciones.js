@@ -75,7 +75,7 @@ const filtrarGerentes = (empleados, puesto = "gerente") => {
     (empleado) => empleado.puesto.toLowerCase() === puesto
   );
 };
-const filtrarEmpMayor40 = (empleados, edad, puesto = "empleado") => {
+const filtrarEmpMayor40 = (empleados, edad = 40, puesto = "empleado") => {
   return empleados.filter(
     (empleado) =>
       empleado.edad > edad && empleado.puesto.toLowerCase() === puesto
